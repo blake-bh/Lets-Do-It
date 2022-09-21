@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-size: 350%;
+    border: solid white;
+    
+}
+
+body{
+    background-color: darkolivegreen;
+}
+
+.PictureHeading{
+    font-size: x-large;
+    text-align:justify;
+}
+
+img{
+    border: solid black 12px;
+}

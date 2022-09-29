@@ -1,13 +1,37 @@
-h1 {
-    text-align: center;
-    font-size: 350%;
-    border: solid white;
-    
+
+.header{
+    display: flex;
+    position: relative;
+    background-color: #007a78 ;
+    justify-content: left;
 }
 
-body{
-    background-color: darkolivegreen;
+h1 {
+    text-align: left;
+    font-size: 300%;
+    color: #FFC745;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
+    
+
 }
+
+#mission{
+    position: absolute;
+    right: 3in;
+    font-size: 200%;
+    top: .1in;
+    color: #FFC745;
+}
+
+#tags{
+    position: absolute;
+    right: .2in;
+    font-size: 170%;
+    top: .1in;
+    color: #FFC745;
+}
+
 
 .PictureHeading{
     font-size: x-large;
@@ -15,5 +39,34 @@ body{
 }
 
 img{
-    border: solid black 12px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.link-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding-top: 1.5in;
+    
+}
+
+
+
+.flexbox-item{
+    width: 3in;
+    height: 3in;
+    border: 3px solid  #007a78;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.link-header{
+    
+}
+
+
+body{
+    background-color: #FFC745;
 }

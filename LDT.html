@@ -7,16 +7,25 @@
     <title>Lets Do This</title>
     <link rel="stylesheet" href="LDT.css">
 </head>
-<body>   
-    <h1> Let's Do This!</h1> 
+<body>
 
-    <div>
-        <p class="PictureHeading">Calendar </p> 
-        <img src="images/calendar-icon-white-background_1308-84634.webp" alt="Err" height="auto" width="200">
+    <!--Header Flexbox-->
+    <div class="header"> 
+        <img src="images/logo-search-grid-1x.png" alt="logo" height="100px" width="auto">
+        <h1 > Let's Do This!</h1>
+        <h2 id="mission"> Our Mission</h2>
+        <h2 id ="tags"> @blake.bh @noah</h2>
+    </div>
+ 
+    <!-- Flexbox Container for all of the future buttons that lead to other pages -->
+    <div class="link-container">
+        <div class = "flexbox-item  calendar-item"> <p class="link-header">Calendar</p> <img src="Calendar.png" alt="calander" height="100px" width="100px"> </div>
+        <div class = " flexbox-item Grocery-item"> <p class="link-header">Grocery List</p> <img src="Groceries.png" alt="Groceries" height="100px" width="100px"> </div>
+        <div class = "flexbox-item Workout-item"><p class="link-header">Workout Routines</p><img src="Workout.png" alt="Workout" height="100px" width="100px"> </div>
+        <div class = "flexbox-item Recipe-item"> <p class="link-header">Recipes</p><img src="MealPrep.png" alt="MealPrep" height="100px" width="100px"> </div>
     </div>
 
-    <div>
-        <p class="PictureHeading">Grocery/Recipes</p>
-    </div>
+
+
 </body>
 </html>

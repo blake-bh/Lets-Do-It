@@ -15,6 +15,9 @@ h1 {
     
 
 }
+#tags:hover{
+    background-color: blue;
+}
 h3{
     text-align: center;
     font-size: xx-large;
@@ -58,7 +61,11 @@ img{
     flex-direction: row;
     justify-content:space-evenly;
     padding-top: 1.5in;
+    text-align: center;
     
+}
+#link-container:hover{
+    background-color: blue;
 }
 .About-Us{
     display: flex;

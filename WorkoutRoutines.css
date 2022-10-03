@@ -1,0 +1,6 @@
+.header{
+    display: flex;
+    position: relative;
+    background-color: #007a78 ;
+    justify-content: left;
+}

@@ -4,3 +4,56 @@
     background-color: #007a78 ;
     justify-content: left;
 }
+h1 {
+    text-align: left;
+    font-size: 300%;
+    color: #FFC745;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
+}
+#Workout{
+    position: absolute;
+    right: 3in;
+    font-size: 200%;
+    top: .1in;
+    color: #FFC745;
+}
+#tags{
+    position: absolute;
+    right: .2in;
+    font-size: 170%;
+    top: .1in;
+    color: #FFC745;
+}
+#tags:hover{
+    background-color: blue;
+}
+#clear{
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #FFC745;
+}

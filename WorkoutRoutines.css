@@ -35,6 +35,13 @@ h1 {
   align-items: center;
   border: 3px solid whitesmoke;
 }
+#share{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid whitesmoke;
+  }
 
 
 

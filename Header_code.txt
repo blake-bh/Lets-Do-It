@@ -1,7 +1,5 @@
-.list{
-    display: flex;
-    justify-content: center;
-}
+CSS BELOW
+
 
 #mission{
     position: absolute;
@@ -42,3 +40,15 @@ img{
 body{
     background-color: #FFC745;
 }
+
+
+HTML BELOW
+
+ <!--Header Flexbox-->
+    <div class="header"> 
+        <img src="images/logo-search-grid-1x.png" alt="logo" height="100px" width="auto">
+        <h1 > Let's Do This!</h1>
+        <h2 id="mission"> Our Mission</h2>
+        <h2 id ="tags"> @Blake @Noah @Seamus</h2>
+    </div>
+

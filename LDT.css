@@ -31,7 +31,7 @@ h4{
 
 #mission{
     position: absolute;
-    right: 3in;
+    right: 4in;
     font-size: 200%;
     top: .1in;
     color: #FFC745;
@@ -96,3 +96,4 @@ img{
 body{
     background-color: #FFC745;
 }
+

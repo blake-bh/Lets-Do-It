@@ -47,23 +47,11 @@ h1 {
     padding-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#clear,#share{
+    position: relative;
+    left: 9.2in;
+    margin-top: .5in;
+}
 
 body{
     background-color: #FFC745;

@@ -7,13 +7,35 @@
     <link rel="stylesheet" href="WorkoutRoutines.css">
 </head>
 <body>
-    <div class="header"> 
-        <img src="images/logo-search-grid-1x.png" alt="logo" height="100px" width="auto">
-        <h1 > Let's Do This!</h1>
-        <h2 id="Workout"> Workout Routines</h2>
-        <h2 id ="tags"> @blake @noah</h2>
-    </div>
-    <label for="table size">Choose a Table Size:</label>
+    <header>
+        <div id="title">
+            <div id='menu' class="dropdown">
+                <a>
+                    <img class='icon' src="./img/menu-white.png">
+                </a>
+            </div>
+            <h1>Lighthouse <span class='hide-when-small'>Podium Check</span></h1>
+            <div id='user' class="dropdown">
+                <a>
+                    <span id='welcome' class="dropbtn hide-when-small">Welcome, <span id='username'>User!</span></span>
+                    <img class='icon' src="./img/white-user-invert.png">
+                </a>
+                <div class="dropdown-content">
+                    <a href="login.php">Log in</a>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <a href="">Home</a>
+            <a href=""><span class='hide-when-small'>Podium Check</span> Form</a>
+            <a href="">Trends</a>
+            <a href="">inventory</a>
+            <a href="">About</a>
+            <a href="">Admin</a>
+        </nav>
+    </header>
+   
 <select name="table size" id="table">
   <option value="7x1">7 x 1</option>
   <option value="7x2">7 x 2</option>

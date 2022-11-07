@@ -1,6 +1,6 @@
 /* ================================================ HEADER ================================================ */
 .header_class {
-    background-image: url('/Images/GymBackground.jpeg');
+    background-image: url('../../Images/GymBackground.jpeg');
     background-size: 180%;
     background-position-x: 30%;
     background-position-y: 65%;

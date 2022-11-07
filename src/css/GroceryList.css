@@ -1,0 +1,84 @@
+.list{
+    display: flex;
+    justify-content: center;
+}
+
+#mission{
+    position: absolute;
+    right: 4in;
+    font-size: 200%;
+    top: .1in;
+    color: #FFC745;
+}
+
+#tags{
+    position: absolute;
+    right: .2in;
+    font-size: 170%;
+    top: .1in;
+    color: #FFC745;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    background-color: #007a78 ;
+    justify-content: left;
+}
+
+h1 {
+    text-align: left;
+    font-size: 300%;
+    color: #FFC745;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 10px;
+}
+
+img{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+body{
+    background-color: #FFC745;
+}
+
+#groc{
+    font-size: 250%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007a78;
+    position: relative;
+    left: 6.6in;
+}
+
+#groceryList{
+    width: 500px;
+    height: 550px;
+    color:#007a78;
+    font-size: larger;
+}
+
+#buttons{
+    display: flex;
+    padding-top: 35px;
+    justify-content: center;
+}
+
+#save , #clear{
+    margin: 5px;
+    width: 120px;
+    font-size: larger;
+    position: relative;
+    right: 2.5in;
+}
+
+#enterName{
+    height: 20px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+#nameID{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+}

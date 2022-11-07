@@ -1,6 +1,6 @@
 /* ================================================ HEADER ================================================ */
-header {
-    background-image: url('./Images/GymBackground.jpeg');
+.header_class {
+    background-image: url('/Images/GymBackground.jpeg');
     background-size: 180%;
     background-position-x: 30%;
     background-position-y: 65%;
@@ -126,4 +126,7 @@ nav > *:hover {
     box-shadow: inset 2px 2px 2px rgb(79, 82, 85),
                 inset -1px -1px 2px rgb(116, 121, 126);
     color: rgb(196, 174, 211);
+}
+body{
+    background-color: rgba(219, 217, 95, 0.171);
 }

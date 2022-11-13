@@ -12,14 +12,7 @@ require('includes/header.html');
 </head>
 <body>
 
-    <!--Header Flexbox-->
-    <div class="header"> 
-        <img src="images/logo-search-grid-1x.png" alt="logo" height="100px" width="auto">
-        <h1 > Let's Do This!</h1>
-        <h2 id="mission"> Our Mission</h2>
-        <h2 id ="tags"> @Blake @Noah @Seamus</h2>
-    </div>
- 
+
     <!-- Flexbox Container for all of the future buttons that lead to other pages -->
     
     <div class="link-container">

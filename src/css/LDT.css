@@ -1,11 +1,4 @@
 
-.header{
-    display: flex;
-    position: relative;
-    background-color: #007a78 ;
-    justify-content: left;
-}
-
 h1 {
     text-align: left;
     font-size: 300%;
@@ -187,13 +180,12 @@ body{
 
 /* ================================================ HEADER ================================================ */
 .header_class {
-    background-image: url('../../Images/GymBackground.jpeg');
+    background-color: #007a78;
     background-size: 180%;
     background-position-x: 30%;
     background-position-y: 65%;
     
 
-    background-color: blue;
     padding: 10px;
     padding-top: 25px;
     margin: 0px;

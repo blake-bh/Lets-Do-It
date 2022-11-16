@@ -26,7 +26,7 @@ require('includes/header.html');
         <h3> About Us </h3>
         <h4>This page is dedicated to the people who feel like they need that extra step to stay in line.
             We at LDT believe that having your days planned will not only give you a better life, but also a healthy one.
-        </h4>5
+        </h4>
 
 
 

@@ -1,8 +1,6 @@
 
 
-<?php
-require('includes/header.html');
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +13,9 @@ require('includes/header.html');
 </head>
 <body>
 
-
+<?php
+require('includes/header.html');
+?>
     <!-- Grocery List Section -->
 
     <h2 id= groc>Groceries</h2>

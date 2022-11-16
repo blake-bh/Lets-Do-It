@@ -1,6 +1,3 @@
-<?php
-require('includes/header.html');
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +8,11 @@ require('includes/header.html');
     <link rel="stylesheet" href="css/LDT.css">
 </head>
 <body>
+    
+<?php
+require('includes/header.html');
+?>
+
     
 </body>
 </html>

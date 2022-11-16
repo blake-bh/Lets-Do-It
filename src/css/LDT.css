@@ -1,22 +1,24 @@
-
-#heading{
+#heading {
     color: #f1f1f1;
 }
-#tags:hover{
+
+#tags:hover {
     background-color: blue;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: xx-large;
 }
-h4{
+
+h4 {
     text-align: center;
     font-size: medium;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+
 }
 
-#mission{
+#mission {
     position: absolute;
     right: 4in;
     font-size: 200%;
@@ -24,7 +26,7 @@ h4{
     color: #FFC745;
 }
 
-#tags{
+#tags {
     position: absolute;
     right: .2in;
     font-size: 170%;
@@ -33,66 +35,68 @@ h4{
 }
 
 
-.PictureHeading{
+.PictureHeading {
     font-size: x-large;
-    text-align:justify;
+    text-align: justify;
 }
 
-img{
+img {
     padding-top: 10px;
     padding-left: 10px;
 }
 
-.link-container{
+.link-container {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding-top: 1.5in;
     text-align: center;
-    
+
 }
-#link-container:hover{
+
+#link-container:hover {
     background-color: blue;
 }
-.About-Us{
+
+.About-Us {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding-top: 1.5in;
-    
+
 }
 
 
 
-.flexbox-item{
+.flexbox-item {
     width: 3in;
     height: 3in;
-    border: 3px solid  #007a78;
+    border: 3px solid #007a78;
     padding: 10px;
     margin: 10px;
 
 }
 
-.link-header{
+.link-header {
     text-align: center;
-    
+
 }
 
 
-body{
+body {
     background-color: #FFC745;
 }
 
 
 /* Grocery List CSS Below */
 
-.list{
+.list {
     display: flex;
     justify-content: center;
 }
 
-#mission{
+#mission {
     position: absolute;
     right: 4in;
     font-size: 200%;
@@ -100,7 +104,7 @@ body{
     color: #FFC745;
 }
 
-#tags{
+#tags {
     position: absolute;
     right: .2in;
     font-size: 170%;
@@ -108,10 +112,10 @@ body{
     color: #FFC745;
 }
 
-.header{
+.header {
     display: flex;
     position: relative;
-    background-color: #007a78 ;
+    background-color: #007a78;
     justify-content: left;
 }
 
@@ -123,37 +127,38 @@ h1 {
     padding-left: 10px;
 }
 
-img{
+img {
     padding-top: 10px;
     padding-left: 10px;
 }
 
-body{
+body {
     background-color: #FFC745;
 }
 
-#groc{
+#groc {
     font-size: 250%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
     position: relative;
     left: 6.6in;
 }
 
-#groceryList{
+#groceryList {
     width: 500px;
     height: 550px;
-    color:#007a78;
+    color: #007a78;
     font-size: larger;
 }
 
-#buttons{
+#buttons {
     display: flex;
     padding-top: 35px;
     justify-content: center;
 }
 
-#save , #clear{
+#save,
+#clear {
     margin: 5px;
     width: 120px;
     font-size: larger;
@@ -161,13 +166,13 @@ body{
     right: 2.5in;
 }
 
-#enterName{
+#enterName {
     height: 20px;
     width: 300px;
     margin-left: 20px;
 }
 
-#nameID{
+#nameID {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 40px;
 }
@@ -178,7 +183,7 @@ body{
     background-size: 180%;
     background-position-x: 30%;
     background-position-y: 65%;
-    
+
 
     padding: 10px;
     padding-top: 25px;
@@ -196,70 +201,83 @@ body{
     border-bottom: solid 5px var(yellow);
 }
 
-#title > h1 {
-    margin: 5px; 
+#title>h1 {
+    margin: 5px;
     text-shadow: 1px 2px var(--old-lavender);
     color: white;
 }
+
 #menu {
     display: none;
 }
+
 /* ================================================ USER BUTTON/DROP DOWN ================================================ */
 #user {
-    margin-right: 17.2in;
+    margin-right: 13.2in;
     text-shadow: .5px 1px var(--old-lavender);
     border-radius: 6px;
 }
+
 .icon {
     border-radius: 23px;
     background-color: #3c6792;
 
     padding: 4px;
     width: 38px;
-    background-color: rgba(33, 96, 119,.8) /*var(--blue-sapphire)*/;
+    background-color: rgba(33, 96, 119, .8)
+        /*var(--blue-sapphire)*/
+    ;
 }
+
 #welcome {
-    margin-right:  10px;
+    margin-right: 10px;
 }
-#user > a {
+
+#user>a {
     display: flex;
     align-items: center;
 }
+
 #user:hover {
     background-color: rgba(63, 49, 71, 0.5);
     box-shadow: inset 2px 2px 2px rgb(79, 82, 85),
-                inset -1px -1px 2px rgb(154, 162, 170);
+        inset -1px -1px 2px rgb(154, 162, 170);
     color: rgb(196, 174, 211);
     text-shadow: none;
 }
+
 a#user {
     color: inherit;
     text-decoration: none;
 }
-.h2{
+
+.h2 {
     color: white;
 }
 
 
 .dropdown {
     position: relative;
-    left: 16.8in;
+    left: 12in;
     bottom: 1.3in;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+
 .dropbtn {
     background-color: transparent;
     color: white;
@@ -267,8 +285,14 @@ a#user {
     font-size: 16px;
     border: none;
 }
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* ================================================ NAV BAR ================================================ */
 
@@ -280,19 +304,22 @@ nav {
     align-items: center;
     flex-direction: row;
 }
-nav > * {
+
+nav>* {
     padding: 5px;
     text-decoration: none;
     color: inherit;
     border-radius: 3px;
     margin-right: 10px;
 }
-nav > *:hover {
+
+nav>*:hover {
     background-color: rgba(63, 49, 71, 0.5);
     box-shadow: inset 2px 2px 2px rgb(79, 82, 85),
-                inset -1px -1px 2px rgb(116, 121, 126);
+        inset -1px -1px 2px rgb(116, 121, 126);
     color: rgb(196, 174, 211);
 }
-body{
+
+body {
     background-color: rgba(219, 217, 95, 0.171);
 }

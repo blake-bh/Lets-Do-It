@@ -1,9 +1,7 @@
 
 
 
-<?php
-require('includes/header.html');
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +14,11 @@ require('includes/header.html');
 </head>
 
 <body>
+    
+<?php
+require('includes/header.html');
+?>
+
     <h2>Choose Table Size</h2>
 <select name="table size" id="table">
   <option value="7x1">7 x 1</option>

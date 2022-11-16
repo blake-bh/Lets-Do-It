@@ -1,27 +1,20 @@
 
 (function () {
     "use strict";
-    
-  
+
     const base_url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch'
 
     window.addEventListener("load", init);
 
-    
 
-    function init(){
+
+    function init() {
         gRequest();
     }
-  
 
 
 
-
-
-
-
-
-    function gRequest(){
+    function gRequest() {
         const options = {
             method: 'GET',
             headers: {
@@ -29,25 +22,25 @@
                 'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
             }
         };
-        
+
         fetch(base_url + '?query=pasta', options)
-        .then(checkStatus)
-        .then(JSON.parse)
-        .then((response) => {
-            console.log(response);
-        })
-        .catch(console.error);
-    
+            .then(checkStatus)
+            .then(JSON.parse)
+            .then((response) => {
+                console.log(response);
+            })
+            .catch(console.error);
+
     }
 
 
     function checkStatus(response) {
         if (response.ok) {
-          return response.text();
+            return response.text();
         } else {
-          return Promise.reject(new Error(response.status + ": " + response.statusText));
+            return Promise.reject(new Error(response.status + ": " + response.statusText));
         }
-      }
+    }
 
 
 
@@ -59,4 +52,5 @@
 
 
 
-})  
+})();
+

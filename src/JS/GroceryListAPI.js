@@ -1,16 +1,13 @@
 
-require('HelperFunctions.js');
-
 (function () {
     "use strict";
     
-
   
     const base_url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch'
 
-    document.addEventListener("load", init);
+    window.addEventListener("load", init);
 
-
+    
 
     function init(){
         gRequest();
@@ -33,7 +30,7 @@ require('HelperFunctions.js');
             }
         };
         
-        fetch(base_url + '?query=pasta')
+        fetch(base_url + '?query=pasta', options)
         .then(checkStatus)
         .then(JSON.parse)
         .then((response) => {
@@ -42,6 +39,15 @@ require('HelperFunctions.js');
         .catch(console.error);
     
     }
+
+
+    function checkStatus(response) {
+        if (response.ok) {
+          return response.text();
+        } else {
+          return Promise.reject(new Error(response.status + ": " + response.statusText));
+        }
+      }
 
 
 

@@ -16,7 +16,7 @@ require('includes/header.html');
 </head>
 
 <body>
-    <h2>Choose Table Size</h2>
+    <h2>Choose Table Sizeeee</h2>
 <select name="table size" id="table">
   <option value="7x1">7 x 1</option>
   <option value="7x2">7 x 2</option>

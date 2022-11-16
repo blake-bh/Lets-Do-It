@@ -1,12 +1,6 @@
 
-h1 {
-    text-align: left;
-    font-size: 300%;
-    color: #FFC745;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 10px;
-    
-
+#heading{
+    color: #f1f1f1;
 }
 #tags:hover{
     background-color: blue;
@@ -201,14 +195,6 @@ body{
 
     border-bottom: solid 5px var(yellow);
 }
-#title {
-    margin: 5px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
 
 #title > h1 {
     margin: 5px; 
@@ -220,8 +206,8 @@ body{
 }
 /* ================================================ USER BUTTON/DROP DOWN ================================================ */
 #user {
+    margin-right: 17.2in;
     text-shadow: .5px 1px var(--old-lavender);
-    padding: 5px 10px;
     border-radius: 6px;
 }
 .icon {
@@ -257,7 +243,8 @@ a#user {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    left: 16.8in;
+    bottom: 1.3in;
 }
 .dropdown-content {
     display: none;

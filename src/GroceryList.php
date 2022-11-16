@@ -11,7 +11,7 @@ require('includes/header.html');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/LDT.css">
-    <script src = '../GroceryListAPI.js'></script>
+    <script src = 'js/grocerylistapi.js'></script>
 </head>
 <body>
 

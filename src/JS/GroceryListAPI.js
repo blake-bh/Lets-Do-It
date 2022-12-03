@@ -2,15 +2,17 @@
 (function () {
     "use strict";
 
-    const base_url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch'
+    const base_url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/search';
 
-    window.addEventListener("load", init);
+    window.addEventListener('load', init);
 
+    function init(){
 
-
-    function init() {
-        gRequest();
+        let submit = document.getElementById("ingredientSubmit");
+        console.log(submit);
+        submit.addEventListener('click', gRequest);
     }
+
 
 
 
@@ -23,7 +25,9 @@
             }
         };
 
-        fetch(base_url + '?query=pasta', options)
+        let ingredient = document.getElementById("ingredient");
+
+        fetch(base_url + 'query?pasta', options)
             .then(checkStatus)
             .then(JSON.parse)
             .then((response) => {
@@ -41,13 +45,6 @@
             return Promise.reject(new Error(response.status + ": " + response.statusText));
         }
     }
-
-
-
-
-
-
-
 
 
 

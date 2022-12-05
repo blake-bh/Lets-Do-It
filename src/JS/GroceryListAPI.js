@@ -10,7 +10,7 @@
 
         let submit = document.getElementById("ingredientSubmit");
         console.log(submit);
-        submit.addEventListener('click', gRequest);
+        submit.addEventListener('click', gRequest); 
     }
 
 
@@ -25,15 +25,18 @@
             }
         };
 
-        let ingredient = document.getElementById("ingredient");
-
-        fetch(base_url + 'query?pasta', options)
+        let ingredient = document.getElementById("ingredient").value;
+        fetch(base_url + '?query='+ingredient, options)
             .then(checkStatus)
             .then(JSON.parse)
             .then((response) => {
                 console.log(response);
+                
+                console.log(response.results[0]);
+                
             })
             .catch(console.error);
+            document.createElement('input');
 
     }
 

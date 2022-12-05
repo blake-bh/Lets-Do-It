@@ -20,7 +20,7 @@
     <div class=list>
         <form>
             <input type="text" placeholder="Enter an Ingredient" id="ingredient">
-            <input type="submit" id="ingredientSubmit">
+            <input type="button" id="ingredientSubmit" value= "Submit">
         </form>
     </div>
 

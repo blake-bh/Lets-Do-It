@@ -16,7 +16,7 @@
 <body>
     
 <?php
-require('includes/header.html');
+require('Includes/header.html');
 ?>
 
     <h2>Choose Table Size</h2>

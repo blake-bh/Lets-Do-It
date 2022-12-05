@@ -18,7 +18,7 @@
 
     <div class="link-container">
         <div class="flexbox-item  calendar-item">
-            <p class="link-header">Calendar</p> <a href="Calendar.php"> <img src="../Images/calendarHome.jpg" alt="Calender" height="200px" width="250px"></a>
+            <p class="link-header">Calendar</p> <a href="Calendar.php"> <img src="../Images/CalendarHome.jpg" alt="Calender" height="200px" width="250px"></a>
         </div>
         <div class=" flexbox-item Grocery-item">
             <p class="link-header">Grocery List</p> <a href="GroceryList.php"> <img src="../Images/Groceries.png" alt="Groceries" height="200px" width="250px"></a>

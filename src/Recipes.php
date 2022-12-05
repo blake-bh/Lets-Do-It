@@ -11,12 +11,12 @@
 <body>
     
 <?php
-require('includes/header.html');
+require('Includes/header.html');
 ?>
   
     <div class="flex-container" id = "instructions">
         <div>
-            <div> <img src="../images/Chicken.jpg" height="200px" width="auto" style="padding: 10px 15px 5px;"> </div>
+            <div> <img src="../Images/Chicken.jpg" height="200px" width="auto" style="padding: 10px 15px 5px;"> </div>
             <div id="description" height="100px" width="200px" style="padding: 0px 15px 0px 5px; font-size: 12px;"> Description: </div>
             <div> 
                 <img src="../Images/save.png" title="Save recipe" height="40px" width="auto" style="padding: 10px 2px 5px;">

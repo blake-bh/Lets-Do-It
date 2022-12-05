@@ -30,14 +30,40 @@
             .then(checkStatus)
             .then(JSON.parse)
             .then((response) => {
-                console.log(response);
-                
-                console.log(response.results[0]);
+                let array = response.results
+                console.log(array.length);
+                for(let i = 0; i < array.length; i++){
+                    postData(array[i].name);
+
+                }
+
                 
             })
             .catch(console.error);
-            document.createElement('input');
+         
+            
 
+
+
+
+
+    }
+
+
+    function postData(data){
+        const returnData = document.createElement('div');
+        let textNode = document.createTextNode(data + '\n');
+        console.log(textNode);
+        returnData.appendChild(textNode);
+        qs(".list").appendChild(returnData);
+
+
+        // Second Attempt at new line
+
+        /* const newLineDiv = document.createElement('div');
+        let newLine = document.createTextNode("\n");
+        newLineDiv.appendChild(newLine);
+        returnData.appendChild(newLineDiv); */
     }
 
 
@@ -48,6 +74,19 @@
             return Promise.reject(new Error(response.status + ": " + response.statusText));
         }
     }
+
+    function id(idName) {
+        return document.getElementById(idName);
+      }
+    
+      /**
+       * Returns the first element that matches the given CSS selector.
+       * @param {string} query - CSS query selector.
+       * @returns {object} The first DOM object matching the query.
+       */
+      function qs(query) {
+        return document.querySelector(query);
+      }
 
 
 

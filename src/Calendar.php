@@ -10,7 +10,7 @@
 <body>
     
 <?php
-require('includes/header.html');
+require('Includes/header.html');
 ?>
 
     

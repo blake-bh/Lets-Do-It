@@ -91,9 +91,18 @@ body {
 
 /* Grocery List CSS Below */
 
-.list {
+/* .list {
     display: flex;
     justify-content: center;
+}
+
+.list>div {
+    margin: 5px;
+} */
+
+#search {
+    width: 300px;
+    margin: auto;
 }
 
 #mission {

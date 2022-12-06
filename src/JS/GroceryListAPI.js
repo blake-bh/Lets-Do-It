@@ -6,11 +6,11 @@
 
     window.addEventListener('load', init);
 
-    function init(){
+    function init() {
 
         let submit = document.getElementById("ingredientSubmit");
         console.log(submit);
-        submit.addEventListener('click', gRequest); 
+        submit.addEventListener('click', gRequest);
     }
 
 
@@ -26,24 +26,23 @@
         };
 
         let ingredient = document.getElementById("ingredient").value;
-        fetch(base_url + '?query='+ingredient, options)
+        fetch(base_url + '?query=' + ingredient, options)
             .then(checkStatus)
             .then(JSON.parse)
             .then((response) => {
-                let array = response.results
+                let array = response.results;
                 console.log(array.length);
-                for(let i = 0; i < array.length; i++){
+                for (let i = 0; i < array.length; i++) {
                     postData(array[i].name);
-                    const newLineDiv = document.createElement('br');
-                    qs(".list").appendChild(newLineDiv);
+
 
                 }
 
-                
+
             })
             .catch(console.error);
-         
-            
+
+
 
 
 
@@ -52,16 +51,32 @@
     }
 
 
-    function postData(data){
-        const returnData = document.createElement('div');
-        let textNode = document.createTextNode(data);
-        console.log(textNode);
+    function postData(data) {
+
+        //Creating the list items 
+        const returnData = document.createElement('li');
+
+        //Creating a span and adding it to the list
+        let textNode = document.createElement('span');
+        textNode.innerText = data;
         returnData.appendChild(textNode);
+
+        //Create a button and add it to the list
+        let button = document.createElement('input');
+        button.setAttribute("type", "button");
+        button.setAttribute("value", data);
+        returnData.appendChild(button);
+        button.addEventListener('click', buttonHandler);
+
+        //Adding the list to the page
         qs(".list").appendChild(returnData);
 
 
+    }
 
-    
+    function buttonHandler() {
+
+        console.log(this.value);
     }
 
 
@@ -75,16 +90,16 @@
 
     function id(idName) {
         return document.getElementById(idName);
-      }
-    
-      /**
-       * Returns the first element that matches the given CSS selector.
-       * @param {string} query - CSS query selector.
-       * @returns {object} The first DOM object matching the query.
-       */
-      function qs(query) {
+    }
+
+    /**
+     * Returns the first element that matches the given CSS selector.
+     * @param {string} query - CSS query selector.
+     * @returns {object} The first DOM object matching the query.
+     */
+    function qs(query) {
         return document.querySelector(query);
-      }
+    }
 
 
 

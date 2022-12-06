@@ -17,11 +17,18 @@
     <!-- Grocery List Section -->
 
     <h2 id=groc>Groceries</h2>
-    <div class=list>
+
+    <div id= "search">
         <form>
             <input type="text" placeholder="Enter an Ingredient" id="ingredient">
             <input type="button" id="ingredientSubmit" value= "Submit">
         </form>
+
+    </div>
+    <div >
+        <ul class= 'list'>
+            
+        </ul>
     </div>
 
     <?php

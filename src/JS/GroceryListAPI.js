@@ -34,6 +34,8 @@
                 console.log(array.length);
                 for(let i = 0; i < array.length; i++){
                     postData(array[i].name);
+                    const newLineDiv = document.createElement('br');
+                    qs(".list").appendChild(newLineDiv);
 
                 }
 
@@ -52,18 +54,14 @@
 
     function postData(data){
         const returnData = document.createElement('div');
-        let textNode = document.createTextNode(data + '\n');
+        let textNode = document.createTextNode(data);
         console.log(textNode);
         returnData.appendChild(textNode);
         qs(".list").appendChild(returnData);
 
 
-        // Second Attempt at new line
 
-        /* const newLineDiv = document.createElement('div');
-        let newLine = document.createTextNode("\n");
-        newLineDiv.appendChild(newLine);
-        returnData.appendChild(newLineDiv); */
+    
     }
 
 

@@ -332,3 +332,37 @@ nav>*:hover {
 body {
     background-color: rgba(219, 217, 95, 0.171);
 }
+#beginner {
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007a78;
+    position: relative;
+    left: 5.8in;
+}
+#inter {
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007a78;
+    position: relative;
+    left: .1in;
+}
+#expert {
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007a78;
+    position: relative;
+    left: .1in;
+}
+#workoutsearch {
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007a78;
+    position: relative;
+    left: 6.5in;
+}
+#workoutsearchbtn {
+    width: 300px;
+    margin: auto;
+    position: relative;
+    left: .5in;
+}

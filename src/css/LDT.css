@@ -353,14 +353,6 @@ body {
     position: relative;
     left: .1in;
 }
-body{
-    background: #0a0a23;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fff;
-  }
   
   select{
     border:none;

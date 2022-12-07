@@ -353,16 +353,21 @@ body {
     position: relative;
     left: .1in;
 }
-#workoutsearch {
-    font-size: 250%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #007a78;
-    position: relative;
-    left: 6.5in;
-}
-#workoutsearchbtn {
-    width: 300px;
-    margin: auto;
-    position: relative;
-    left: .5in;
-}
+body{
+    background: #0a0a23;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+  }
+  
+  select{
+    border:none;
+    padding: 10px 20px;
+    border-radius:5px;
+  }
+  
+  select:focus{
+    outline:none;
+  }

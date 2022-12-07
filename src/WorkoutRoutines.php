@@ -337,18 +337,23 @@ require('Includes/header.html');
         </tr>
     </table>
     <h5 id=workoutsearch>Workouts</h5>
-
-    <div id= "workoutsearchbtn">
+    <label for="bodybtn">Select a body part:</label>
+<select name="body" id="bodybtn">
+  <option value="Chest">chest</option>
+  <option value="Lower Legs">lower legs</option>
+  <option value="Upper Legs">upper legs</option>
+  <option value="cardio">cardio</option>
+  <option value="Back">back</option>
+  <option value="Lower Arms">lower arms</option>
+  <option value="Neck">neck</option>
+  <option value="Upper Arms">lower arms</option>
+  <option value="Waist">waist</option>
+</select>
+<div id= "search">
         <form>
-            <input type="text" placeholder="Enter a body part" id="ingredient">
-            <input type="button" id="ingredientSubmit" value= "Submit">
+            <input type="button" id="boadypartsubmit" value= "Submit">
         </form>
 
-    </div>
-    <div >
-        <ul class= 'list'>
-            
-        </ul>
     </div>
     
 </body>

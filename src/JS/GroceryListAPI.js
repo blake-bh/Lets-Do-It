@@ -26,19 +26,16 @@
         };
 
         let ingredient = document.getElementById("ingredient").value;
-        fetch(base_url + '?query=' + ingredient, options)
+        fetch(base_url + '?query=' + ingredient + '&number=100', options)
             .then(checkStatus)
             .then(JSON.parse)
             .then((response) => {
                 let array = response.results;
                 console.log(array.length);
+                qs('.list').innerHTML = '';
                 for (let i = 0; i < array.length; i++) {
                     postData(array[i].name);
-
-
                 }
-
-
             })
             .catch(console.error);
 
@@ -53,14 +50,20 @@
 
     function postData(data) {
 
+        
+        
+      
+
         //Creating the list items 
         const returnData = document.createElement('li');
+        returnData.setAttribute("id", "IngredientItem");
+
 
         //Creating a span and adding it to the list
-        let textNode = document.createElement('span');
+       /*  let textNode = document.createElement('span');
         textNode.innerText = data;
         returnData.appendChild(textNode);
-
+ */
         //Create a button and add it to the list
         let button = document.createElement('input');
         button.setAttribute("type", "button");
@@ -77,6 +80,7 @@
     function buttonHandler() {
 
         console.log(this.value);
+        
     }
 
 

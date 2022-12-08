@@ -346,22 +346,26 @@ body {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
-    position: relative;
-    left: 5.8in;
+    text-align: center;
 }
 #inter {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
-    position: relative;
-    left: .1in;
+    text-align: center;
 }
 #expert {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
-    position: relative;
-    left: .1in;
+    text-align: center;
+}
+#workoutsearch{
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007a78;
+    text-align: center;
+
 }
   
   select{
@@ -372,4 +376,19 @@ body {
   
   select:focus{
     outline:none;
+  }
+  .bodybtn {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  
+
+  }
+  .search {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    
   }

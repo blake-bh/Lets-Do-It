@@ -30,7 +30,7 @@ function getRequest() {
 
     fetch(baseURL + bodyPart, options)
         .then(response => response.json())
-        .then(response => console.log(response.length))
+        .then(response => console.log(response))
         .catch(err => console.error(err));
 
 }

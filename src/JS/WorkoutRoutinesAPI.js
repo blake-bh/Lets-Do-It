@@ -31,7 +31,11 @@ function getRequest() {
     fetch(baseURL + bodyPart, options)
         .then(response => response.json())
         .then(response => {
-            postWorkouts(response);
+            let array = [];
+            array.length = 5;
+            array = response;
+            console.log(array.slice(0,6));
+            postWorkouts(array);
         })
         .catch(err => console.error(err));
 

@@ -23,20 +23,16 @@
         <div class=" flexbox-item Grocery-item">
             <p class="link-header">Grocery List</p> <a href="GroceryList.php"> <img src="../Images/Groceries.png" alt="Groceries" height="200px" width="250px"></a>
         </div>
-        <div class="flexbox-item Workout-item">
-            <p class="link-header">Workout Routines</p> <a href="WorkoutRoutines.php"> <img src="../Images/GymHomePage.png" alt="Workout" height="200px" width="250px"></a>
-        </div>
+       
         <div class="flexbox-item Recipe-item">
             <p class="link-header">Recipes</p> <a href="Recipes.php"> <img src="../Images/MealPrep.png" alt="MealPrep" height="200px" width="250px"></a>
         </div>
+        <div class="flexbox-item Workout-item">
+            <p class="link-header">Workout Routines</p> <a href="WorkoutRoutines.php"> <img src="../Images/GymHomePage.png" alt="Workout" height="200px" width="250px"></a>
+        </div>
     </div>
     <!-- about us-->
-    <div class="About-Us">
-        <h3> About Us </h3>
-        <h4>This page is dedicated to the people who feel like they need that extra step to stay in line.
-            We at LDT believe that having your days planned will not only give you a better life, but also a healthy one.
-        </h4>
-
+    
 
 
 

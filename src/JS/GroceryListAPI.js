@@ -80,6 +80,12 @@
     function buttonHandler() {
 
         console.log(this.value);
+        let ing = document.createElement('p');
+        ing.setAttribute("id", "ingP")
+        ing.innerText = this.value;
+        id('selected').appendChild(ing);
+    
+
         
     }
 

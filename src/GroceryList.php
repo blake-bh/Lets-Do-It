@@ -31,6 +31,10 @@
         </ul>
     </div>
 
+    <div id = selected>
+    <h3 id = 'yourList'> Your List:</h3>
+    </div>
+
     <?php
     ?>
 

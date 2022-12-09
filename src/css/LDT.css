@@ -196,6 +196,29 @@ body {
     display: none;
 }
 
+#yourList{
+    text-align:justify;
+    color: #007a78;
+}
+#ingP{
+    color: #007a78;
+    font-size: 135%;
+}
+
+#about{
+    color: #007a78;
+    font-size: 125%;
+    text-align: center;
+}
+
+#recipeTitle{
+    font-size: 125%;
+}
+
+#recipeDiv{
+    text-align: center;
+}
+
 /* ================================================ HEADER ================================================ */
 .header_class {
     background-color: #007a78;

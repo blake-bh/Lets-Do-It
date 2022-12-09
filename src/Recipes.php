@@ -36,10 +36,12 @@ require('Includes/header.html');
                 <br>
                 <input type="button" id="recipesubmit" value="Submit">
             </form>
+
+            <br>
     </div>
 
     <div id = 'recipes'>
-        
+
     </div>
 </body>
 </html>

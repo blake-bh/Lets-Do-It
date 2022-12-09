@@ -61,8 +61,11 @@ function postRecipes(data){
         textNode.innerText = data.title;
         textNode.setAttribute("id", "recipeTitle");
         recipe.appendChild(textNode);
+        textNode.appendChild(divBreak);
         recipeImage.setAttribute("src", data.image)
         recipe.appendChild(recipeImage);
+        
+       
 }
 
 function checkStatus(response) {

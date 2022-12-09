@@ -30,9 +30,15 @@ function getRequest() {
 
     fetch(baseURL + bodyPart, options)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => {
+            postWorkouts(response);
+        })
         .catch(err => console.error(err));
 
+}
+
+function postWorkouts(data){
+    
 }
 
 function checkStatus(response) {

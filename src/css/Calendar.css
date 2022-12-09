@@ -94,8 +94,183 @@ header .current-date{
   transform: translate(-50%, -50%);
 }
 .days li.active::before{
-  background: #007a78;;
+  background: #007a78;
 }
 .days li:not(.active):hover::before{
   background: #f2f2f2;
 } 
+
+
+li#hours {
+  list-style: none;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul#hours {
+  margin: 0px;
+  padding: 0px;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-template-rows: 7;
+  gap: 1px 1px;
+  grid-template-areas:
+    ". head"
+    "timeslots-container main";
+}
+
+.weekdays,
+.daynumbers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays {
+  background: #007a78;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.daynumbers {
+  background: rgb(194, 194, 194);
+  min-height: 2em;
+}
+
+.daynumbers li {
+  border-right: 1px solid black;
+}
+
+.head {
+  background: rgb(224, 189, 156);
+  grid-area: head;
+}
+
+.timeslots-container {
+  background: #007a78;
+  grid-area: timeslots-container;
+  justify-items: left;
+}
+
+.timeslots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeslots li#hours {
+  min-height: 60px;
+}
+
+.timeslots li#hours::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 100%;
+  height: 1px;
+  background: #afafaf;
+  z-index: 1;
+}
+
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(36, 1fr);
+  background: rgb(222, 223, 231);
+  grid-area: main;
+  position: relative;
+  white-space: nowrap;
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 14.2%,
+    gray 14.3%
+  );
+}
+
+.event-name {
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  line-height: 15px;
+}
+
+.slot {
+  position: absolute;
+  background: rgb(66, 147, 223);
+  border-radius: 5px;
+  z-index: 2;
+  margin-top: 1px;
+  border-color: rgb(3, 155, 229);
+  outline: none;
+}
+
+.slot::before {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.slot::after {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: -webkit-calc(100% + 2px);
+  width: calc(100% + 2px);
+  height: -webkit-calc(100% + 2px);
+  height: calc(100% + 2px);
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  border: 1px solid #fff;
+}
+
+.event-status {
+  float: left;
+  border-left: 3px solid #007a78;
+  height: 100%;
+}
+
+.slot-1 {
+  height: 45px;
+
+  grid-row: 17;
+
+  grid-column: 1;
+}
+
+.slot-2 {
+  height: 45px;
+}
+
+.slot-3 {
+  height: 75px;
+}
+
+.slot-4 {
+  color: red;
+}
+
+.on-resize {
+  opacity: 0.85;
+}
+
+.gridcell::after {
+  content: "";
+  border-right: #dadce0 1px solid;
+  position: relative;
+  -webkit-box-flex: 1 1 auto;
+  height: 200%;
+}

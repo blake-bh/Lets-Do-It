@@ -11,7 +11,6 @@
   </head>
   <body>
     <?php include "Includes/header.html"?>
-    <!-- style = "position:relative; left:-1000px; top:400px;" -->
     <div class="wrapper">
       <header>
         <p class="current-date"></p>
@@ -34,5 +33,39 @@
       </div>
     </div>
     
+    
+<input type="date" id='date' style = "position:relative; left:480px; top:-450px;"/>
+<input type="time" id='starttime' style = "position:relative; left:480px; top:-450px;"/>
+<input type="time" id='endtime' style = "position:relative; left:480px; top:-450px;"/>
+<button style = "position:relative; left:480px; top:-450px;">Add</button>
+<div class="calendar-container" style = "position:relative; left:480px; top:-450px;">
+
+	<div class="head">
+		<ul class="weekdays" id='hours'>
+			<li id='hours'>Sunday</li>
+			<li id='hours'>Monday</li>
+			<li id='hours'>Tuesday</li>
+			<li id='hours'>Wednesday</li>
+			<li id='hours'>Thuesday</li>
+			<li id='hours'>Friday</li>
+			<li id='hours'>Saturday</li>
+		</ul>
+	</div>
+
+	<div class="timeslots-container" id='hours'>
+		<ul class="timeslots" id='hours'>
+			<li id='hours'>9<sup>am</sup>
+			<li id='hours'>10<sup>am</sup>
+			<li id='hours'>11<sup>am</sup>
+			<li id='hours'>12<sup>pm</sup>
+			<li id='hours'>1<sup>pm</sup>
+			<li id='hours'>2<sup>pm</sup>
+			<li id='hours'>3<sup>pm</sup>
+			<li id='hours'>4<sup>pm</sup>
+			<li id='hours'>5<sup>pm</sup>
+		</ul>
+	  </div>
+	  <div class="event-container" id='hours'>	</div>
+  </div>
   </body>
 </html>

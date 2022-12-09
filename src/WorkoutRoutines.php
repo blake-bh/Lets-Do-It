@@ -385,7 +385,10 @@
             </form>
 
         </div>
+
+       <div class = 'post'>
         
+       </div>
 
 </body>
 

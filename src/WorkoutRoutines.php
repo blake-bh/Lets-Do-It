@@ -383,10 +383,13 @@
             <form>
                 <input type="button" id="bodypartsubmit" value="Submit">
             </form>
+            
 
         </div>
+        <br>
+        <br>
 
-       <div class = 'post'>
+       <div id = 'post'>
         
        </div>
 

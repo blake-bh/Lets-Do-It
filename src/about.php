@@ -35,8 +35,8 @@
     &emsp; - Look up recipes using any ingredients <br>
     <br>
     Workout Routines <br><br>
-    &emsp; - see different tables depending on your skill set <br>
-    &emsp; - look at body specific workouts <br>
+    &emsp; - See different tables depending on your skill set <br>
+    &emsp; - Look at body specific workouts <br>
 
 </h5>
 

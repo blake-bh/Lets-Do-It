@@ -9,6 +9,6 @@ CREATE TABLE user(
     userName VARCHAR(30) NOT NULL,
     userEmail VARCHAR(30) NOT NULL,
     userUid VARCHAR(30) NOT NULL,
-    userPwd VARCHAR(100) NOT NULL
+    userPwd VARCHAR(100) NOT NULL,
     PRIMARY KEY(userID)
 );

@@ -30,9 +30,31 @@ function getRequest() {
 
     fetch(baseURL + bodyPart, options)
         .then(response => response.json())
-        .then(response => console.log(response.length))
+        .then(response => {
+            let array = [];
+            array = response;
+            array = array.slice(0,10);
+            for (let i =0; i < array.length; i++){
+                postWorkouts(array[i]); 
+            }
+            
+        })
         .catch(err => console.error(err));
 
+}
+
+function postWorkouts(data){
+    const divbreak = document.createElement('br');
+    let workoutimage = document.createElement('img');
+    workoutimage.setAttribute("src", data.gifUrl);
+    const workoutname = document.createElement('div');
+    workoutname.setAttribute('id', 'center');
+    let textnode = document.createElement('span');
+    textnode.innerText = data.name;
+    workoutname.appendChild(textnode);
+    textnode.appendChild(divbreak);
+    workoutname.appendChild(workoutimage);
+    id('post').appendChild(workoutname);
 }
 
 function checkStatus(response) {

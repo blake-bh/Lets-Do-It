@@ -91,18 +91,25 @@ body {
 
 /* Grocery List CSS Below */
 
-/* .list {
-    display: flex;
-    justify-content: center;
+.list {
+    text-align: center;
+    list-style-position: inside;
 }
 
-.list>div {
-    margin: 5px;
-} */
+ #IngredientItem{
+    margin: 10px;
+}
+
+
+
+
+
+
 
 #search {
     width: 300px;
     margin: auto;
+    text-align: center;
 }
 
 #mission {
@@ -149,8 +156,7 @@ body {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
-    position: relative;
-    left: 6.6in;
+    text-align: center;
 }
 
 #groceryList {
@@ -184,6 +190,33 @@ body {
 #nameID {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 40px;
+}
+
+.hidden{
+    display: none;
+}
+
+#yourList{
+    text-align:justify;
+    color: #007a78;
+}
+#ingP{
+    color: #007a78;
+    font-size: 135%;
+}
+
+#about{
+    color: #007a78;
+    font-size: 125%;
+    text-align: center;
+}
+
+#recipeTitle{
+    font-size: 125%;
+}
+
+#recipeDiv{
+    text-align: center;
 }
 
 /* ================================================ HEADER ================================================ */
@@ -336,22 +369,26 @@ body {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
-    position: relative;
-    left: 5.8in;
+    text-align: center;
 }
 #inter {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
-    position: relative;
-    left: .1in;
+    text-align: center;
 }
 #expert {
     font-size: 250%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #007a78;
-    position: relative;
-    left: .1in;
+    text-align: center;
+}
+#workoutsearch{
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #007a78;
+    text-align: center;
+
 }
   
   select{
@@ -362,4 +399,22 @@ body {
   
   select:focus{
     outline:none;
+  }
+  .bodybtn {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  
+
+  }
+  .search {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    
+  }
+  #center{
+      text-align: center;
   }
